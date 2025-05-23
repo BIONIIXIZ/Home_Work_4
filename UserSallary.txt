@@ -1,0 +1,5 @@
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Dmytro Tarnavskyi,1500
+Taras Skrypnik,2500
