@@ -3,7 +3,6 @@ from pathlib import Path
 
 def total_salary(path):
     try:
-        Path(path).open(encoding="utf-8")
         file_path = Path(path)
         total_sum = 0
         count = 0
@@ -16,10 +15,12 @@ def total_salary(path):
                     total_sum += salary
                     count += 1
                 except ValueError:
-                    print(f"Помилка виникла в рядку: {line.strip()}")
+                    print(f"error occurred in the line: {line.strip()}")
 
-            avarage = total_sum / count
+            avarage = total_sum / count if count else 0
             return (total_sum, avarage)
     except FileNotFoundError:
         print(f"path {file_path} is not Found.")
         return (0,0)
+def run_def(path):
+    return total_salary(path)
