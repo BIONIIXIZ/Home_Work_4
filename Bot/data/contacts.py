@@ -16,7 +16,7 @@ def remove_contact(args, contacts):
         return f"This Contact '{name}' removed"
     return f"This Contact '{name}' not found"
 
-def show_all_contacts(contacts):
+def show_all_contacts(args, contacts):
     if not contacts:
         return "No contacts found."
     return "\n".join([f"{name}: {phone}" for name, phone in contacts.items()])
